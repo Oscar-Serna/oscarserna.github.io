@@ -1,0 +1,283 @@
+
+/* Espero les guste :b */
+/* Oscar Serna */
+
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Didact+Gothic&family=Fjalla+One&family=Fredoka+One&family=Noto+Sans+JP:wght@500;700&family=Patua+One&display=swap');
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+/* Fuentes de letra
+{
+    Fuentes
+    font-family: 'Bree Serif', serif;
+    font-family: 'Didact Gothic', sans-serif;
+    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Fredoka One', cursive;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Patua One', cursive;
+} */
+body{
+    background: url(images/bg-pattern-top-desktop.svg)
+}
+/* Main */
+main{
+    margin: 80px 0px 40px 70px;
+    width: 90%;
+    background: url(images/bg-pattern-bottom-desktop.svg);
+}
+main > div{
+    padding: 80px 0px 0px 90px;
+}
+/* Parte superior */
+.superior{
+    margin-top: -100px;
+    display: flex;
+    justify-content: space-between;
+}
+    /* Description */
+    .description > .titulo{
+        width: 450px;
+    }
+    .description > .titulo h1{
+        font-weight: bolder;
+        font-size: 45px;
+        font-family: 'Fjalla One', sans-serif;
+        color: rgb(84, 0, 84);
+        line-height: 45px;
+    }
+    .description > .titulo p{
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 26px;
+        position: relative;
+        top: 20px;
+        color: rgba(84, 60, 84, 0.773);
+        font-family: 'Fjalla One', sans-serif;
+    }
+
+    /* Rating */
+    .cards-rating{
+        position: relative;
+        left: -200px;
+    }
+    .cards-rating > div{
+        margin: 20px 0px;
+    }
+    .card-rg{
+        height: 49px;
+        max-width: 480px;
+        align-items: center;
+        display: flex;
+        justify-content: left;
+        background-color: rgba(128, 0, 128, 0.060);
+        border-radius: 7px;
+        padding: 0px 30px;
+        position: relative;
+        transition: all 300ms ease;
+    }
+    .card-rg:hover{
+        left: 30px;
+        transition: all 600ms ease;
+    }
+    .card-rg > .stars{
+        margin-right: 30px;
+    }
+    .r1{
+        position: relative;
+        left: 0px;
+        cursor: pointer;
+    }
+    .r2{
+        position: relative;
+        left: 50px;
+        cursor: pointer;
+    }
+    .r3{
+        position: relative;
+        left: 100px;
+        cursor: pointer;
+    }
+    /* Rating - Text */
+    .card-rg > .text p{
+        font-size: 14px;
+        color: rgb(84, 0, 84);
+        font-weight: bold;
+        font-family: 'Fjalla One', sans-serif;
+        margin-bottom: 4px;
+    }
+
+/* Parte inferior */
+.cards-persons{
+    position: relative;
+    left: -35px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+    /* B.G.C - Cards */
+    .card-pn{
+        width: 360px;
+        background-color: rgb(72, 0, 72);
+        margin: 0px 30px;
+        border-radius: 10px;
+        transition: all 400ms;
+    }
+    .card-pn:hover{
+        margin-top: 25px;
+        transition: all 800ms;
+    }
+    .card-pn > div{
+        margin: 40px 35px;
+    }
+    /* Section Flex */
+    .section-flex{
+        display: flex;
+        justify-content: left;
+        align-items: center;
+    }
+        /* Image */
+        .section-flex > .image img{
+            width: 50px;
+            border-radius: 50%;
+            box-shadow: 0px 0px 10px white;
+        }
+        /* Nombre */
+        .section-flex > .nombre{
+            position: relative;
+            left: 25px;
+            text-align: left;
+        }
+        .section-flex > .nombre h2{
+            color: #fff;
+            font-size: 21px;
+            font-family: 'Fjalla One', sans-serif;
+        }
+        .section-flex > .nombre h3{
+            color: rgba(255, 143, 158, 0.767);
+            font-size: 17px;
+            font-family: 'Didact Gothic', sans-serif;
+        }
+
+    /* Section Info */
+    .section-info p{
+        font-size: 15px;
+        font-family: 'Noto Sans JP', sans-serif;
+        line-height: 25px;
+        color: #fff;
+    }
+
+    /* Espaciado Top - Card-P */
+    .p1{
+        position: relative;
+        top: 0px;
+        cursor: pointer;
+    }
+    .p2{
+        position: relative;
+        top: 15px;
+        cursor: pointer;
+    }
+    .p3{
+        position: relative;
+        top: 30px;
+        cursor: pointer;
+    }
+
+
+/* ATRIBUCION */
+    .attribution{
+        position: relative;
+        top: 20px;
+        display: flex;
+        justify-content: center
+    }
+    .attribution p{
+        color: black;
+        font-family: 'Fjalla One', sans-serif;
+    }
+    .attribution a{
+        color: gray;
+        text-decoration: underline rgb(75, 75, 75);
+        font-family: 'Fjalla One', sans-serif;
+        transition: all 1.5s ease;
+    }
+    .attribution a:hover{
+        color: rgb(5, 0, 164);
+        text-decoration: none;
+        transition: all 900ms ease;
+    }
+    .element-responsive{
+        display: none;
+    }
+
+                     /* Responsive */
+
+@media screen and (max-width:1152px) {
+    body{
+        background: url(images/bg-pattern-top-mobile.svg)
+    }
+    /* Main */
+    main{
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 0;
+        background: url(images/bg-pattern-bottom-mobile.svg);
+    }
+    main > div{
+        padding: 0;
+    }
+    .superior{
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 40px;
+    }
+    .superior > .description{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 45px
+
+    }
+     .description > .titulo{
+        width: 300px;
+    }
+    .inferior{
+        margin-bottom: 50px;
+    }
+    .cards-rating{
+        left: 0;
+    }
+    .card-rg:hover{
+        left: 15px;
+    }
+    .r2{
+        left: 0px;
+    }
+    .r3{
+        left: 0px;
+    }
+    .card-pn:hover{
+        margin-top: 0;
+        transform: scale(1.06);
+    }
+    .cards-persons{
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+        left: 0;
+    }
+    .attribution{
+        text-align: center;
+        line-height: 25px;
+    }
+    .element-responsive{
+        display: block;
+    }
+}
+
+                    
